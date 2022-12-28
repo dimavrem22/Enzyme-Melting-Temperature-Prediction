@@ -55,4 +55,10 @@ CV was used to find the optimal parameters for the **Multiple Layer Perceptron**
 <img width="500" alt="Screenshot 2022-12-28 at 5 19 29 PM" src="https://user-images.githubusercontent.com/90374336/209880305-983dcde9-417b-4de9-842a-8ff0f95cd0b6.png">
 
 Model with best **absolute** performance: **Random Forest Regressor** 
+
 Model with best overall performance: **Multiple Layer Perceptron**
+
+## Referances: 
+1. Dennis Pultz, Esben Friis, inversion, Jesper Salomon, Maggie, Peter Fischer Hallin, Sarah Baagøe Jørgensen et al. Novozymes Enzyme Stability Prediction. Kaggle (2022). https://kaggle.com/competitions/novozymes-enzyme-stability-prediction
+2. Mu, Z., Yu, T., Liu, X. et al. FEGS: a novel feature extraction model for protein sequences and its applications. BMC Bioinformatics 22, 297 (2021). https://doi.org/10.1186/s12859-021-04223-3
+
