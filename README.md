@@ -52,7 +52,7 @@ CV was used to find the optimal parameters for the **Multiple Layer Perceptron**
 - Number of Hidden Layers: 300
 
 ## Comparing the Performance of all Models
-<img width="425" alt="Screenshot 2022-12-28 at 5 19 29 PM" src="https://user-images.githubusercontent.com/90374336/209880305-983dcde9-417b-4de9-842a-8ff0f95cd0b6.png">
+<img width="500" alt="Screenshot 2022-12-28 at 5 19 29 PM" src="https://user-images.githubusercontent.com/90374336/209880305-983dcde9-417b-4de9-842a-8ff0f95cd0b6.png">
 
 Model with best **absolute** performance: **Random Forest Regressor** 
 Model with best overall performance: **Multiple Layer Perceptron**
