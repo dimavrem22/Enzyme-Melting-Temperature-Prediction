@@ -1,5 +1,5 @@
 # Enzyme-Melting-Temperature-Prediction
-Using machine learning to predict the thermostability of enzymes from their amino acid sequences. 
+Using machine learning to predict the thermostability (melting temperature) of enzymes from their amino acid sequences. 
 
 ## Project Data 
 All data used for the completion of this project can be found in the following Google Drive Folder: 
@@ -16,3 +16,43 @@ The data was filtered using the following criteria:
 
 Applying the criteria resulted in a sample size of 23,462 enzymes. 
 
+## Feature Extraction 
+Features were extracted from the amino acid sequneces using FEGS (Feature Extraction based on Graphical and Statistical Features) tool published and open-sourced in 2021 [2]. The featurizer accepts an amino acid sequence and returns a 578-dimensional vector based on physiochemical properties of amino acids as well as amino acid/ dipeptide frequencies.
+
+## Train/Test Split
+All entries were randomly split into training (75%) and testing (25%) sets. 
+
+## Feature Normalization
+All features of the training set were normalized to a Gaussian distribution. Each feature had a mean of zero and a standard distribution of one. The testing data was then normalized using the same fit. This ensured that ML model traing was in no way influenced by entries from the testing set. 
+
+## Training Machine Learning Models 
+The following regression models were trained and tested: 
+- Multiple Linear Regression
+- Ridge Regression
+- Lasso Regression
+- Support Vector Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+- Multiple Layer Perceptron
+
+The following metrics were used for model evaluation: 
+- Mean Squared Error (MSE) 
+- Root Mean Squared Error (RMSE)
+- R-squared 
+- Mean Absolute Error (MAE) 
+
+## Cross Validation for Parameter Optimization
+Grid Search was used to find the optimal parameters for the **Random Forest Regressor**: 
+- Number of decision trees: 200
+- Maximum Decision Tree Depth: 20 
+
+CV was used to find the optimal parameters for the **Multiple Layer Perceptron**: 
+- Activation Function: _logistic_
+- Maximum GD Iterations: 100 
+- Number of Hidden Layers: 300
+
+## Comparing the Performance of all Models
+<img width="425" alt="Screenshot 2022-12-28 at 5 19 29 PM" src="https://user-images.githubusercontent.com/90374336/209880305-983dcde9-417b-4de9-842a-8ff0f95cd0b6.png">
+
+Model with best **absolute** performance: **Random Forest Regressor** 
+Model with best overall performance: **Multiple Layer Perceptron**
