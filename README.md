@@ -48,7 +48,7 @@ Grid Search was used to find the optimal parameters for the **Random Forest Regr
 
 CV was used to find the optimal parameters for the **Multiple Layer Perceptron**: 
 - Activation Function: _logistic_
-- Maximum GD Iterations: 100 
+- Maximum Epochs: 100 
 - Number of Hidden Layers: 300
 
 ## Comparing the Performance of all Models
